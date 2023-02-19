@@ -20,6 +20,7 @@ int main (int argc, char **argv) {
 	}
 	if (!file2.is_open()) {
 		std::cout << "test.exe: Can't open " << expected << std::endl;
+		return -1;
 	}
 	while (std::getline(file1, line1) && std::getline(file2, line2)) {
 		if (line1 == line2) {

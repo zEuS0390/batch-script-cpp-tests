@@ -5,6 +5,7 @@ set name="addition"
 set directory="%cd%\%name:"=%"
 set tests_directory="%directory:"=%\tests"
 set test_file="%cd%\compare_output.exe"
+set source_file="%directory:"=%\main.cpp"
 set exe_file="%directory:"=%\main.exe"
 set output_file="%directory:"=%\output.txt"
 set /A case_number=0
@@ -31,6 +32,7 @@ GOTO :MAIN
 EXIT /B 0
 
 :MAIN
+	g++ %source_file% -o %exe_file%
 	echo Test Program: %directory%
 	echo --------------------
 	CALL :EXECUTE_TESTS
