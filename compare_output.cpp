@@ -23,18 +23,18 @@ unsigned int count_number_of_lines(std::ifstream &file) {
 
 int main (int argc, char **argv) {
 
+	// The program requires to two command-line arguments
+	if (argc != 3) {
+		std::cout << "compare_output.exe: requires 2 inputs (output, expected)" << std::endl;
+		return -1;
+	}
+
 	// Declare variables
 	std::string output(argv[1]), expected(argv[2]);
 	std::ifstream file1(output), file2(expected);
 	std::string line1, line2;
 	int count_file1 = 0, count_file2 = 0;
 	bool result = false;
-
-	// The program requires to two command-line arguments
-	if (argc != 3) {
-		std::cout << "compare_output.exe: requires 2 inputs (output, expected)" << std::endl;
-		return -1;
-	}
 
 	// Check if the first file is opened or not 
 	if (!file1.is_open()) {
