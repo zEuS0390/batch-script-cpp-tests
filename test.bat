@@ -27,5 +27,4 @@ EXIT /B 0
 :MAIN
 g++ compare_output.cpp -o compare_output.exe
 CALL :EXECUTE_TEST
-pause
 EXIT /B 0
