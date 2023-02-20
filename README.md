@@ -14,19 +14,20 @@ test.bat <folder_name>
 Inside the specified folder, there should be a subfolder called `tests`. 
 This folder also contains subfolders of test cases. 
 Each test case folder contains two text files: `expected_output.txt` and `inputs.txt`. 
-Keep in mind that the main C++ source file is also contained in the specified folder, along with the `test.bat` script. 
-This batch script is different from the main directory as it handles the compilation of the source file/s and all the test cases.
+Keep in mind that the main C++ source file is also contained in the specified folder, along with the `compile.bat` script. 
+This batch script is different from the main directory as it handles the compilation of the source file/s.
 
 You can copy one of the given examples and create your own. Here's the structure:
 ```
 batch-script-cpp-tests.
 │   .gitignore
 │   compare_output.cpp
+│   README.md
 │   test.bat
 │   
 ├───addition
+│   │   compile.bat
 │   │   main.cpp
-│   │   test.bat
 │   │   
 │   └───tests
 │       ├───test_case_1
@@ -38,8 +39,8 @@ batch-script-cpp-tests.
 │               inputs.txt
 │               
 ├───loop
+│   │   compile.bat
 │   │   main.cpp
-│   │   test.bat
 │   │   
 │   └───tests
 │       └───test_case_1
@@ -47,8 +48,8 @@ batch-script-cpp-tests.
 │               inputs.txt
 │               
 └───triangle
+    │   compile.bat
     │   main.cpp
-    │   test.bat
     │   
     └───tests
         └───test_case_1
