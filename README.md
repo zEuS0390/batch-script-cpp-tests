@@ -56,3 +56,8 @@ batch-script-cpp-tests.
                 expected_output.txt
                 inputs.txt
 ```
+
+https://github.com/zEuS0390/batch-script-cpp-tests/assets/39390245/16d58723-3f9b-4ab0-bd1d-471fb2c851bb
+
+
+
